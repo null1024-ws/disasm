@@ -1,0 +1,10 @@
+AC_INIT(disasm.c)		
+AM_INIT_AUTOMAKE(disasm, 0.1)		
+
+AC_PROG_CC
+AC_STDC_HEADERS
+
+AC_HAVE_HEADERS(bfd.h)
+AC_CHECK_LIB([bfd], [bfd_init],,[echo "BDF (gnu binutils) required"; exit;]) 
+
+AC_OUTPUT([Makefile])
