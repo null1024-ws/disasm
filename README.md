@@ -25,5 +25,6 @@ cd /disasm
 # Step 5: Exit the container
 exit
 
+```
 ## Debug log
 Please feel free to visit this [link](https://hackmd.io/uAkgHz1RRNOi_soqLLLG4w). 
