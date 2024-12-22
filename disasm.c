@@ -3156,11 +3156,6 @@ static void init_disasm_info(struct disassemble_info *disasm_info, Segment *segm
   disasm_info->section = segment->section;
 }
 
-int bfd_get_section_size_before_reloc(asection *section) {
-   return (section->reloc_count ? (abort(),1): (section)->rawsize);
-}
-
-
 /* Disassemble the contents of an object file.  */
 void disassemble_i386_data (bfd *abfd, int print_insn_digraphs, int interactive)
 {
@@ -3202,7 +3197,7 @@ void disassemble_i386_data (bfd *abfd, int print_insn_digraphs, int interactive)
     else
       is_code = 1;
 
-    datasize = bfd_get_section_size_before_reloc (section);
+    datasize = bfd_get_section_size (section);
     if (datasize == 0)
       continue;
     data = (bfd_byte *) xalloc ((size_t) datasize, (size_t) sizeof(bfd_byte));

@@ -788,8 +788,6 @@ float detect_junk_insts(bfd_vma start, bfd_vma end);
 float update_junk_score(Instruction *new, Instruction *next,
   float orig, unsigned int num);
 
-int bfd_get_section_size_before_reloc(asection *section);
-
 /******************************************************************************/
 /*                           Symbolic Execution Code                          */
 /******************************************************************************/
