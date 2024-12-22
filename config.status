@@ -63,11 +63,11 @@ s%@INSTALL_SCRIPT@%${INSTALL_PROGRAM}%g
 s%@INSTALL_DATA@%${INSTALL} -m 644%g
 s%@PACKAGE@%disasm%g
 s%@VERSION@%0.1%g
-s%@ACLOCAL@%/home/shen/disasm-0.1/missing aclocal-1.4%g
-s%@AUTOCONF@%/home/shen/disasm-0.1/missing autoconf%g
-s%@AUTOMAKE@%/home/shen/disasm-0.1/missing automake-1.4%g
-s%@AUTOHEADER@%/home/shen/disasm-0.1/missing autoheader%g
-s%@MAKEINFO@%/home/shen/disasm-0.1/missing makeinfo%g
+s%@ACLOCAL@%/home/shen/disasm/missing aclocal-1.4%g
+s%@AUTOCONF@%/home/shen/disasm/missing autoconf%g
+s%@AUTOMAKE@%/home/shen/disasm/missing automake-1.4%g
+s%@AUTOHEADER@%/home/shen/disasm/missing autoheader%g
+s%@MAKEINFO@%/home/shen/disasm/missing makeinfo%g
 s%@SET_MAKE@%%g
 s%@CC@%gcc%g
 s%@CPP@%gcc -E%g

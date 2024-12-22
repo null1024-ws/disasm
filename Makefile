@@ -40,10 +40,10 @@ pkgincludedir = $(includedir)/disasm
 
 top_builddir = .
 
-ACLOCAL = /home/shen/disasm-0.1/missing aclocal-1.4
-AUTOCONF = /home/shen/disasm-0.1/missing autoconf
-AUTOMAKE = /home/shen/disasm-0.1/missing automake-1.4
-AUTOHEADER = /home/shen/disasm-0.1/missing autoheader
+ACLOCAL = /home/shen/disasm/missing aclocal-1.4
+AUTOCONF = /home/shen/disasm/missing autoconf
+AUTOMAKE = /home/shen/disasm/missing automake-1.4
+AUTOHEADER = /home/shen/disasm/missing autoheader
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL} $(AM_INSTALL_PROGRAM_FLAGS)
@@ -58,7 +58,7 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 CC = gcc
-MAKEINFO = /home/shen/disasm-0.1/missing makeinfo
+MAKEINFO = /home/shen/disasm/missing makeinfo
 PACKAGE = disasm
 VERSION = 0.1
 
