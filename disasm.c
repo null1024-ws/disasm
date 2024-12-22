@@ -3197,7 +3197,7 @@ void disassemble_i386_data (bfd *abfd, int print_insn_digraphs, int interactive)
     else
       is_code = 1;
 
-    datasize = bfd_get_section_size (section);
+    datasize = bfd_section_size (section);
     if (datasize == 0)
       continue;
     data = (bfd_byte *) xalloc ((size_t) datasize, (size_t) sizeof(bfd_byte));
