@@ -5,9 +5,9 @@ This repository provides a `Dockerfile` to build and run the `disasm` C project 
 ## Usage
 
 ```bash
-# Step 1: Clone the repository
+# Step 1: Clone the repository and navigate to the desired directory
 git clone https://github.com/null1024-ws/disasm.git
-cd disasm_image
+cd disasm/disasm_image
 
 # Step 2: Build the Docker image
 docker build -t disasm-project .
