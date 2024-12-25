@@ -3178,7 +3178,8 @@ void disassemble_i386_data (bfd *abfd, int print_insn_digraphs, int interactive)
   disasm_info.buffer = NULL;
   disasm_info.buffer_vma = 0;
   disasm_info.buffer_length = 0;
-  opb = bfd_octets_per_byte(abfd, abfd->sections);
+  // https://bugs.openjdk.org/browse/JDK-8244819
+  opb = bfd_octets_per_byte(abfd, NULL);
   disasm_info.octets_per_byte = opb;
 
   /* for all sections -- load the data and initialize the instruction arrays */
