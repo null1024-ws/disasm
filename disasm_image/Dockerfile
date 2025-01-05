@@ -35,7 +35,8 @@ ENV LC_CTYPE=C.UTF-8
 WORKDIR /disasm
 
 # Configure and build the project in one step
-RUN CFLAGS="-g -O0" bash -c "git pull && ./configure --enable-debug && make clean && make"
+# RUN CFLAGS="-g -O0" bash -c "git pull && ./configure --enable-debug && make clean && make"
+RUN CFLAGS="-g -O3" bash -c "git pull && ./configure && make clean && make"
 
 # Default command to start the container
 CMD ["bash"]
